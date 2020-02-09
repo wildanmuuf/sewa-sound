@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#5fb0c9"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+    <TextView
+        android:id="@+id/title_penyewaan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
+        android:text="Sewa Sound"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_penyewaan"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:background="@drawable/layout_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:id="@+id/textInputMerk">
+
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:id="@+id/textMerk"
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:hint="Merk Sound"
+                    android:inputType="textPersonName"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:id="@+id/textInputHarga">
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:text="Rp. "
+                    android:id="@+id/textHarga"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:hint="Harga"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:id="@+id/textInputKategori">
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:id="@+id/textKategori"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:hint="Kategori"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputTglAwal"
+                android:layout_width="match_parent"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_first_date"
+                    android:id="@+id/txt_tgl_awal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Tanggal Awal"
+                    android:drawableTint="#FF4081"
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputTglAkhir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawableTint="#FF4081"
+                    android:drawableLeft="@drawable/ic_first_date"
+                    android:id="@+id/txt_tgl_akhir"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Tanggal Akhir"
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:id="@+id/textInputKeterangan">
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:id="@+id/textKeterangan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:hint="Keterangan"
+                    android:inputType="textMultiLine"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputAlamat"
+                android:layout_width="match_parent"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:id="@+id/sewa_alamat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Alamat"
+                    android:inputType="textMultiLine"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_cari_lokasi"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/mapbox_plugins_green"
+                    android:text="Cari Lokasi"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+
+                <Button
+                    android:id="@+id/alamat_user"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/mapbox_plugins_bright_blue"
+                    android:text="Gunakan Lokasi Anda"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputTotal"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:id="@+id/total_sewa"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Total"
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_sewa_sound"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#d67601"
+                android:text="Sewa"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

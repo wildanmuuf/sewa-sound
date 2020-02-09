@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.1"
+    defaultConfig {
+        applicationId "com.unpam.sewasound"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    //firebase
+    implementation 'com.google.firebase:firebase-core:17.2.0'
+    implementation 'com.google.firebase:firebase-database:19.1.0'
+    implementation 'com.google.firebase:firebase-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.0.1'
+    implementation 'com.firebaseui:firebase-ui-storage:4.3.2'
+    implementation 'com.google.firebase:firebase-messaging:20.0.1'
+
+    //gmaps service
+    //implementation ('com.google.android.libraries.places:places:2.0.0'){
+    //exclude group:'com.google.android.libraries.places', module:'places-compat'
+    //}
+    //mapbox
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-geojson:4.8.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:8.2.1'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.11.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-places-v8:0.9.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-markerview-v8:0.3.0'
+    //implementation 'com.google.android.gms:play-services-base:17.1.0'
+    //implementation 'com.google.android.gms:play-services-basement:17.1.0'
+    //design
+    implementation 'com.synnapps:carouselview:0.1.5'
+    implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    implementation 'com.android.support:leanback-v17:28.0.0'
+    implementation 'com.github.ivbaranov:materialfavoritebutton:0.1.5'
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

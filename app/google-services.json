@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "527174037597",
+    "firebase_url": "https://sewasound-d6c7a.firebaseio.com",
+    "project_id": "sewasound-d6c7a",
+    "storage_bucket": "sewasound-d6c7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527174037597:android:357657c8c8ebd18c",
+        "android_client_info": {
+          "package_name": "com.unpam.sewasound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527174037597-hqjp2jt5nog7uiugmdi9ctpvddkd8dbq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unpam.sewasound",
+            "certificate_hash": "acdfb1c264781ac1c94a343fc0719f46ee58d083"
+          }
+        },
+        {
+          "client_id": "527174037597-1pvbb38jc4e8gcpkb6ql5u0ehjku7827.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOqh_8O-a5huD8-cy4_zTZRqH0wppE4_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527174037597-1pvbb38jc4e8gcpkb6ql5u0ehjku7827.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

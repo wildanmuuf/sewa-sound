@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#5fb0c9"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+    <TextView
+        android:id="@+id/title_sound"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
+        android:text="Tambah Sound"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:background="@drawable/layout_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:id="@+id/textInputMerk">
+
+                <EditText
+                    android:id="@+id/textMerk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Merk Sound"
+                    android:inputType="textPersonName"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:id="@+id/textInputHarga">
+                <EditText
+                    android:text="Rp. "
+                    android:id="@+id/txtHarga"
+                    android:layout_width="fill_parent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:hint="Harga"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/kategoriSpin"
+                    android:layout_width="fill_parent"
+                    android:textColorHighlight="#FF4081"
+                    android:backgroundTint="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:dropDownWidth="wrap_content"
+                    android:hint="Pilih Kategori"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#FF4081"
+                app:hintTextColor="#FF4081"
+                android:id="@+id/textInputDesc">
+                <EditText
+                    android:id="@+id/txtDesc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableTint="#FF4081"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Deskripsi"
+                    android:inputType="textMultiLine"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_upload_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/mapbox_plugins_bright_blue"
+                android:text="Tambah gambar"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <androidx.leanback.widget.HorizontalGridView
+                android:id="@+id/gvSound"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:numColumns="3"></androidx.leanback.widget.HorizontalGridView>
+
+            <Button
+                android:id="@+id/btn_update_sounds"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#d67601"
+                android:text="Update Sound"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

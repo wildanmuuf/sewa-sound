@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Penyewaan Sound</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="API_KEY">pk.eyJ1Ijoid2lsZGFubXV1ZiIsImEiOiJjanpoN3J2bG0waTBwM2lvNXZkaW5hdjkzIn0.ai8VPvbFgRRzXl0aL94bSQ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Cari Lokasi</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="selected_place_info">Selected location information:\n%1$s</string>
+    <string name="pick_place">Choose a place</string>
+    <string name="current_location">Lat: %1$f Long: %2$f</string>
+    <string name="tracking_enabled">Tracking mode re-enabled</string>
+    <string name="tracking_already_enabled">Tracking already enabled. Move the map</string>
+
+    <!--Marker strings for DrawMarkerActivity activity-->
+    <string name="draw_marker_options_title">Hello World!</string>
+    <string name="draw_marker_options_snippet">Welcome to my marker.</string>
+
+    <string-array name="kategori">
+        <item>2000 Watt</item>
+        <item>5000 Watt</item>
+        <item>10000 Watt</item>
+    </string-array>
+    <string-array name="kategori2">
+        <item>Semua</item>
+        <item>2000 Watt</item>
+        <item>5000 Watt</item>
+        <item>10000 Watt</item>
+    </string-array>
+    <string name="title_activity_detail_sound">Detail Sound</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_penyewaan">PenyewaanActivity</string>
+    <string name="title_activity_maps2">Maps2Activity</string>
+    <string name="title_activity_pesanan_saya">PesananSaya</string>
+    <string name="title_activity_list_tab_single_user">ListTabSingleUser</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

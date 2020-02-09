@@ -1,0 +1,101 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id = "@+id/text_box">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/txt_pelapak"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/txt_tgl_penyewaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#008000"
+                android:id="@+id/txt_status"
+                android:textSize="15dp"
+                android:gravity="right"
+                android:textStyle="italic|bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp">
+                <Button
+                    android:backgroundTint="#d9534f"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0.0dip" android:layout_height="fill_parent"
+                    android:layout_marginRight="2dp"
+                    android:text="Batalkan"
+                    android:layout_weight="1.0" />
+                <Button
+                    android:backgroundTint="#428bca"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:id="@+id/btn_finish"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="0.0dip" android:layout_height="fill_parent"
+                    android:text="Penyewaan Selesai"
+                    android:layout_weight="1.0" />
+                <Button
+                    android:backgroundTint="@color/mapbox_plugins_green"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:id="@+id/btn_call"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="0.0dip" android:layout_height="fill_parent"
+                    android:text="Telepon"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
